@@ -1,8 +1,12 @@
+/* eslint-disable prettier/prettier */
 import { Injectable } from '@nestjs/common';
+import { getData } from './feature/firebase';
 
 @Injectable()
 export class AppService {
   getHello(): string {
+    // getData();
+    // addData('ini adalah quote', 'bimbim');
     return 'Hello World!';
   }
   all(): object {

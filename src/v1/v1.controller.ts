@@ -1,5 +1,6 @@
 import { Controller, Get, Param } from '@nestjs/common';
 import { AppService } from '../app.service';
+import { error } from 'console';
 
 @Controller('v1')
 export class V1Controller {
@@ -7,7 +8,7 @@ export class V1Controller {
 
   @Get()
   fail(): string {
-    return 'add the /:category';
+    return 'add the /category';
   }
 
   @Get('all')
